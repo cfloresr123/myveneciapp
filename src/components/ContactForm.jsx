@@ -1,31 +1,8 @@
-import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useState } from 'react';
 import { Mail, Send } from 'lucide-react';
 
 const ContactForm = () => {
-  const form = useRef();
   const [status, setStatus] = useState('');
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        'service_3bhwg4d',
-        'template_v91veun',
-        form.current,
-        '_65mpFhmInt9QT90E'
-      )
-      .then(
-        () => {
-          setStatus('✅ Tu mensaje fue enviado correctamente.');
-          form.current.reset();
-        },
-        () => {
-          setStatus('❌ Ocurrió un error. Inténtalo nuevamente.');
-        }
-      );
-  };
 
   return (
     <section className="w-full px-4 py-8 bg-gray-100">
@@ -35,7 +12,16 @@ const ContactForm = () => {
           <h2 className="text-2xl font-semibold text-blue-700">Contáctanos</h2>
         </div>
 
-        <form ref={form} onSubmit={sendEmail} className="space-y-6">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          className="space-y-6"
+          onSubmit={() => setStatus('✅ Tu mensaje fue enviado correctamente.')}
+        >
+          {/* Hidden input for Netlify */}
+          <input type="hidden" name="form-name" value="contact" />
+
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
             <input
