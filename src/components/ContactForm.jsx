@@ -17,7 +17,25 @@ const ContactForm = () => {
           method="POST"
           data-netlify="true"
           className="space-y-6"
-          onSubmit={() => setStatus('✅ Tu mensaje fue enviado correctamente.')}
+          onSubmit={(e) => {
+            e.preventDefault();
+            const form = e.target;
+            const data = new FormData(form);
+
+            fetch("/", {
+              method: "POST",
+              headers: { "Content-Type": "application/x-www-form-urlencoded" },
+              body: new URLSearchParams(data).toString(),
+            })
+              .then(() => {
+                setStatus("✅ Tu mensaje fue enviado correctamente.");
+                form.reset();
+              })
+              .catch((error) => {
+                console.error("Error al enviar:", error);
+                setStatus("❌ Ocurrió un error. Intenta nuevamente.");
+              });
+          }}
         >
           {/* Hidden input for Netlify */}
           <input type="hidden" name="form-name" value="contact" />
