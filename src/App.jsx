@@ -13,13 +13,16 @@ function App() {
     <>       
       <Navbar />
       {/* Espaciado para que no se oculte debajo del navbar fijo */}
-      <div className="pt-20"> 
-        <Header />  
-        <HamburgerMenu />            
+      <div className="pt-20">          
+        <HamburgerMenu />     
+        <Header />        
         <FeatureSection />
         <Carrusel />
         <ContactForm />
         <WhatsAppFloatingButton />
+        <section id="inicio" className="h-screen bg-gray-100">Inicio</section>
+        <section id="caracteristicas" className="h-screen bg-gray-200">Características</section>
+        <section id="contacto" className="h-screen bg-gray-300">Contacto</section>
       </div>
     </>
   )
