@@ -1,21 +1,22 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import WhatsAppFloatingButton from './components/WhatsAppFloatingButton';
+import Header from './components/Header'
+import Navbar from './components/Navbar'
+import WhatsAppFloatingButton from './components/WhatsAppFloatingButton'
 
-import MyLandingPage from './components/MyLandingPage';
-import FeatureSection from './components/FeatureSection';
-import Carrusel from './components/Carrusel';
-import ContactForm from './components/ContactForm';
+// Landing components
+import FeatureSection from './components/FeatureSection'
+import Carrusel from './components/Carrusel'
+import ContactForm from './components/ContactForm'
 
-import Propietarios from './pages/Propietarios';
-import Reservas from './pages/Reservas';
-import Mantenimiento from './pages/Mantenimiento';
-import Visitas from './pages/Visitas';
-import Contacto from './pages/Contacto';
-import NotFound from './pages/NotFound';
+// Pages
+import Propietarios from './pages/Propietarios'
+import Reservas from './pages/Reservas'
+import Mantenimiento from './pages/Mantenimiento'
+import Visitas from './pages/Visitas'
+import Contacto from './pages/Contacto'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
                 <FeatureSection />
                 <Carrusel />
                 <ContactForm />
+                <WhatsAppFloatingButton />
               </>
             }
           />
@@ -42,9 +44,8 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
-      <WhatsAppFloatingButton />
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
