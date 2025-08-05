@@ -11,7 +11,9 @@ import Carrusel from './components/Carrusel'
 import ContactForm from './components/ContactForm'
 
 // Pages
-import Propietarios from './pages/Propietarios'
+import PropietariosPage from './pages/PropietariosPage'
+import JuntaPage from './pages/JuntaPage'
+import ConserjePage from './pages/ConserjePage'
 import Reservas from './pages/Reservas'
 import Mantenimiento from './pages/Mantenimiento'
 import Visitas from './pages/Visitas'
@@ -36,7 +38,9 @@ function App() {
               </>
             }
           />
-          <Route path="/propietarios" element={<Propietarios />} />
+          <Route path="/propietariospage" element={<PropietariosPage />} />
+          <Route path="/juntapage" element={<JuntaPage />} />
+          <Route path="/conserjepage" element={<ConserjePage />} />
           <Route path="/reservas" element={<Reservas />} />
           <Route path="/mantenimiento" element={<Mantenimiento />} />
           <Route path="/visitas" element={<Visitas />} />
