@@ -21,7 +21,7 @@ const Navbar = () => {
         </div>
 
         {/* Menú escritorio */}
-        <ul className="hidden md:flex space-x-6 text-gray-800 font-medium">
+        {/*<ul className="hidden md:flex space-x-6 text-gray-800 font-medium">
           {links.map((link) => (
             <li key={link.href}>
               <a
@@ -32,7 +32,7 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-        </ul>
+        </ul>*/}
 
         {/* Botón hamburguesa (solo en móvil) */}
         <button
