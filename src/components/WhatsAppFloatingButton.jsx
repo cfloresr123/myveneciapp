@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppFloatingButton = () => {
   const phoneNumber = '51946589808'; // tu número con código país
@@ -21,7 +22,8 @@ const WhatsAppFloatingButton = () => {
         fontWeight: 'bold'
       }}    
     >
-      WHATSAPP
+      <FaWhatsapp size={24} />
+      WhatsApp
     </a>
   );
 };
