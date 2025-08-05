@@ -10,12 +10,11 @@ import Navbar from './components/Navbar';
   
 function App() {
   return (
-    <>       
+    <> 
+      <Header />       
       <Navbar />
       {/* Espaciado para que no se oculte debajo del navbar fijo */}
-      <div className="pt-20">          
-        <HamburgerMenu />     
-        <Header />        
+      <div className="pt-20">                                    
         <FeatureSection />
         <Carrusel />
         <ContactForm />
