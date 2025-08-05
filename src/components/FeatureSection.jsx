@@ -6,19 +6,19 @@ export default function FeatureSection() {
       icon: "users",
       title: "Propietarios e Inquilinos",
       desc: "Reservas, mantenimiento, visitas y más.",
-      href: "/propietarios"
+      href: "/propietariospage"
     },
     {
       icon: "gavel",
       title: "Junta de Propietarios",
       desc: "Gestión centralizada, reportes, seguridad.",
-      href: "/junta"
+      href: "/juntapage"
     },
     {
       icon: "concierge-bell",
       title: "Conserje o Vigilante",
       desc: "Control de visitas, incidencias.",
-      href: "/conserje"
+      href: "/conserjepage"
     },
   ];
 
