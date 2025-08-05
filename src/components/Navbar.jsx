@@ -7,8 +7,11 @@ const Navbar = () => {
 
   const links = [
     { label: 'Inicio', href: '#inicio' },
-    { label: 'Características', href: '#caracteristicas' },
-    { label: 'Contacto', href: '#contacto' },
+    { label: 'Propietarios e Inquilinos', href: '#Propietarios' },
+    { label: 'Reservas ', href: '#Reservas' },
+    { label: 'Mantenimiento', href: '#Mantenimiento' },
+    { label: 'Visitas', href: '#Visitas' },
+    { label: 'Contacto', href: '#Contacto' },
   ];
 
   return (
@@ -17,7 +20,6 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           {/* Puedes reemplazar esto por <img src="/logo.png" alt="logo" className="h-8" /> */}
-          <span className="text-2xl font-extrabold text-blue-700">MyVeneciApp</span>
         </div>
 
         {/* Menú escritorio */}
