@@ -1,49 +1,51 @@
-// src/components/Footer.jsx
+// components/Footer.jsx
 import React from 'react';
-import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
-const Footer = () => (
-  <footer className="bg-white text-gray-700 border-t mt-16">
-    <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-12 text-sm">
+const Footer = () => {
+  return (
+    <footer className="bg-gray-900 text-white py-10 px-4">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Logo y descripción */}
+        <div>
+          <h2 className="text-xl font-bold text-white mb-4">MyVeneciApp</h2>
+          <p className="text-sm text-gray-300">
+            Plataforma moderna para la gestión de edificios, diseñada para facilitar la vida de propietarios e inquilinos.
+          </p>
+        </div>
 
-      {/* Sección de contacto */}
-      <div>
-        <h4 className="text-base font-semibold mb-4 text-gray-800 uppercase tracking-wide">Contáctanos</h4>
-        <p className="mb-1">Lima - Perú</p>
-        <p className="mb-1">Teléfono: (1) 223 3982</p>
-        <p className="mb-1">Móvil: +51 946 589 808</p>
-        <p className="mb-1">Email: <a href="mailto:myveneciapp@gmail.com" className="text-blue-600 hover:underline">myveneciapp@gmail.com</a></p>
-        <p className="mt-3 text-gray-600 font-medium">SOFTWALCE - RUC 2025</p>
-      </div>
+        {/* Información de contacto */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Contáctanos</h3>
+          <ul className="text-sm text-gray-300 space-y-2">
+            <li>Lima - Perú</li>
+            <li>Teléfono: (1) 223 3982</li>
+            <li>Móvil: +51 946 589 808</li>
+            <li>Email: <a href="mailto:myveneciapp@gmail.com" className="underline">myveneciapp@gmail.com</a></li>
+            <li>MyVeneciApp - 2025</li>
+          </ul>
+        </div>
 
-      {/* Navegación */}
-      <div>
-        <h4 className="text-base font-semibold mb-4 text-gray-800 uppercase tracking-wide">Navegación</h4>
-        <ul className="space-y-2">
-          <li><a href="/" className="hover:text-blue-600 transition">Inicio</a></li>
-          <li><a href="/Propietarios" className="hover:text-blue-600 transition">Propietarios e Inquilinos</a></li>
-          <li><a href="/Reservas" className="hover:text-blue-600 transition">Reservas</a></li>
-          <li><a href="/Visitas" className="hover:text-blue-600 transition">Visitas</a></li>
-          <li><a href="/Contacto" className="hover:text-blue-600 transition">Contáctanos</a></li>
-        </ul>
-      </div>
-
-      {/* Redes sociales */}
-      <div>
-        <h4 className="text-base font-semibold mb-4 text-gray-800 uppercase tracking-wide">Síguenos</h4>
-        <div className="flex space-x-5 text-xl text-gray-600">
-          <a href="#" aria-label="Facebook" className="hover:text-blue-600 transition"><FaFacebook /></a>
-          <a href="#" aria-label="Instagram" className="hover:text-pink-500 transition"><FaInstagram /></a>
-          <a href="#" aria-label="LinkedIn" className="hover:text-blue-700 transition"><FaLinkedin /></a>
+        {/* Enlaces rápidos */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Enlaces</h3>
+          <ul className="text-sm text-gray-300 space-y-2">
+            <li><a href="/" className="hover:underline">Inicio</a></li>
+            <li><a href="/Propietarios" className="hover:underline">Propietarios e Inquilinos</a></li>
+            <li><a href="/Reservas" className="hover:underline">Reservas</a></li>
+            <li><a href="/Mantenimiento" className="hover:underline">Mantenimiento</a></li>
+            <li><a href="/Visitas" className="hover:underline">Visitas</a></li>
+            <li><a href="/Contacto" className="hover:underline">Contacto</a></li>
+          </ul>
         </div>
       </div>
-    </div>
 
-    {/* Derechos reservados */}
-    <div className="bg-gray-100 text-center text-xs py-4 text-gray-500">
-      © {new Date().getFullYear()} SOFTWALCE – Todos los derechos reservados.
-    </div>
-  </footer>
-);
+      {/* Línea final */}
+      <div className="mt-10 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+        © {new Date().getFullYear()} MyVeneciApp - Todos los derechos reservados.
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;
+
