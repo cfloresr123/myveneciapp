@@ -9,6 +9,7 @@ import WhatsAppFloatingButton from './components/WhatsAppFloatingButton'
 import FeatureSection from './components/FeatureSection'
 import Carrusel from './components/Carrusel'
 import ContactForm from './components/ContactForm'
+import Footer from './components/Footer'
 
 // Pages
 import PropietariosPage from './pages/PropietariosPage'
@@ -35,6 +36,7 @@ function App() {
                 <FeatureSection />
                 <Carrusel />
                 <ContactForm />
+                <Footer />
                 <WhatsAppFloatingButton />
               </>
             }
