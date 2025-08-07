@@ -32,11 +32,15 @@ function App() {
           <Route
             path="/"
             element={
-              <>
-                <FeatureSection />
-                <Carrusel />
-                <ContactForm />
-                <Footer />
+              <>                
+                <div className="flex flex-col min-h-screen">
+                  <main className="flex-grow">
+                    <FeatureSection />
+                    <Carrusel />
+                    <ContactForm />
+                  </main>                
+                  <Footer />
+                </div>
                 <WhatsAppFloatingButton />
               </>
             }
