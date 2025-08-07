@@ -6,7 +6,8 @@ const Footer = () => {
     <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-10 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Menú */}
-        <div>
+        <div className="bg-red-500 text-white p-4">Tailwind está funcionando</div>
+        <div>            
           <h5 className="text-xl font-bold mb-4">Menú</h5>
           <ul className="space-y-2 text-sm text-gray-300">
             <li><a href="/" className="hover:text-yellow-400">Inicio</a></li>
