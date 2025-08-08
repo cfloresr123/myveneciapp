@@ -1,4 +1,5 @@
 import React from "react";
+import qrImage from "../assets/mujer-mostrando-qr.png";
 
 const Visitas = () => {
   return (
@@ -17,10 +18,7 @@ const Visitas = () => {
               </div>
             </div>
             <div className="col-12 col-md-12 col-lg-4 image-wrapper align-right">
-              <img
-                src="assets/mujer-mostrando-qr.png"
-                alt="myveneciapp-software-de-edificios"
-              />
+              <img src={qrImage} alt="myveneciapp-software-de-edificios" />
             </div>
           </div>
         </div>
@@ -36,8 +34,8 @@ const Visitas = () => {
                 ¿Cómo? Con una entrada al edificio, o condominio, en código QR.
                 <br />
                 Las ventajas de la modernidad en acceso a eventos en la
-                palma de tu mano, con nuestro
-                <strong>módulo de invitaciones</strong>.
+                palma de tu mano, con nuestro 
+                <strong> módulo de invitaciones</strong>.
                 <br />
                 <br />
                 ¿Cómo funciona? <br />
