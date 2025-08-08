@@ -1,5 +1,5 @@
 import React from "react";
-import { HiBuilding, HiDocumentText, HiUsers, HiOfficeBuilding } from "react-icons/hi2";
+import { HiBuilding, HiDocumentText, HiUsers, HiOfficeBuilding } from "react-icons/hi";
 
 const StatsSection = () => {
   const stats = [
