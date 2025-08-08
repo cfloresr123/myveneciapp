@@ -1,7 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { HomeIcon, CalendarDaysIcon, WrenchScrewdriverIcon, UsersIcon, PhoneIcon } from '@heroicons/react/24/outline';
-
+import {
+  HomeIcon,
+  CalendarDaysIcon,
+  WrenchScrewdriverIcon,
+  UsersIcon,
+  PhoneIcon
+} from "@heroicons/react/24/outline";
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import WhatsAppFloatingButton from './components/WhatsAppFloatingButton';
@@ -25,11 +30,11 @@ import NotFound from './pages/NotFound';
 
 function App() {
   const menuItems = [
-  { label: 'Propietarios e Inquilinos', icon: <HomeIcon className="w-10 h-10 text-indigo-600" />, href: '/propietarios' },
-  { label: 'Reservas', icon: <CalendarDaysIcon className="w-10 h-10 text-indigo-600" />, href: '/reservas' },
-  { label: 'Mantenimiento', icon: <WrenchScrewdriverIcon className="w-10 h-10 text-indigo-600" />, href: '/mantenimiento' },
-  { label: 'Visitas', icon: <UsersIcon className="w-10 h-10 text-indigo-600" />, href: '/visitas' },
-  { label: 'Contacto', icon: <PhoneIcon className="w-10 h-10 text-indigo-600" />, href: '/contacto' },
+  { label: "Propietarios e Inquilinos", icon: HomeIcon, href: "/propietarios" },
+  { label: "Reservas", icon: CalendarDaysIcon, href: "/reservas" },
+  { label: "Mantenimiento", icon: WrenchScrewdriverIcon, href: "/mantenimiento" },
+  { label: "Visitas", icon: UsersIcon, href: "/visitas" },
+  { label: "Contacto", icon: PhoneIcon, href: "/contacto" },
 ];
 
   return (
