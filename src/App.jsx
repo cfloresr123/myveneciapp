@@ -72,9 +72,7 @@ function App() {
                   <FeatureSection />
                   <Carrusel />
                   <ContactForm />
-                </main>
-
-                <Footer />
+                </main>                
                 <WhatsAppFloatingButton />
               </>
             }
@@ -91,6 +89,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
