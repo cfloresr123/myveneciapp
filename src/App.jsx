@@ -27,6 +27,10 @@ function App() {
     <Router>
       <Header />
       <Navbar />
+      <div className="bg-red-500 p-10 text-white">Prueba Tailwind</div>
+      <div className="min-h-screen flex items-center justify-center bg-blue-500 text-white text-4xl">
+          🚀 Tailwind 4 funcionando
+      </div>
       <div className="flex flex-col items-center justify-center h-screen bg-blue-100">
         <h1 className="text-4xl font-bold text-blue-600">
           🚀 MyVeneciApp con Tailwind
