@@ -23,10 +23,16 @@ import Contacto from './pages/Contacto'
 import NotFound from './pages/NotFound'
 
 function App() {
-  return (
+  return (        
     <Router>
       <Header />
       <Navbar />
+      <div className="flex flex-col items-center justify-center h-screen bg-blue-100">
+        <h1 className="text-4xl font-bold text-blue-600">
+          🚀 MyVeneciApp con Tailwind
+        </h1>
+        <p className="mt-4 text-lg">Tailwind está funcionando 🎉</p>
+      </div>
       <div className="pt-20">
         <Routes>
           <Route
