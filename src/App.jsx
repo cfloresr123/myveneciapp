@@ -25,12 +25,12 @@ import NotFound from './pages/NotFound';
 
 function App() {
   const menuItems = [
-    { label: 'Propietarios e Inquilinos', icon: <HomeIcon className="h-10 w-10 text-indigo-500" />, href: '/propietarios' },
-    { label: 'Reservas', icon: <CalendarDaysIcon className="h-10 w-10 text-indigo-500" />, href: '/reservas' },
-    { label: 'Mantenimiento', icon: <WrenchScrewdriverIcon className="h-10 w-10 text-indigo-500" />, href: '/mantenimiento' },
-    { label: 'Visitas', icon: <UsersIcon className="h-10 w-10 text-indigo-500" />, href: '/visitas' },
-    { label: 'Contacto', icon: <PhoneIcon className="h-10 w-10 text-indigo-500" />, href: '/contacto' },
-  ];
+  { label: 'Propietarios e Inquilinos', icon: <HomeIcon className="w-10 h-10 text-indigo-600" />, href: '/propietarios' },
+  { label: 'Reservas', icon: <CalendarDaysIcon className="w-10 h-10 text-indigo-600" />, href: '/reservas' },
+  { label: 'Mantenimiento', icon: <WrenchScrewdriverIcon className="w-10 h-10 text-indigo-600" />, href: '/mantenimiento' },
+  { label: 'Visitas', icon: <UsersIcon className="w-10 h-10 text-indigo-600" />, href: '/visitas' },
+  { label: 'Contacto', icon: <PhoneIcon className="w-10 h-10 text-indigo-600" />, href: '/contacto' },
+];
 
   return (
     <Router>
