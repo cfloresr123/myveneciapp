@@ -51,7 +51,7 @@ const Visitas = () => {
                 <br />
                 <br />
                 ¿Te gustaría implementar este tipo de solución en tu
-                <strong>administradora de edificios</strong>? Solicita más
+                <strong> administradora de edificios</strong>? Solicita más
                 información{" "}
                 <a
                   href="#"
