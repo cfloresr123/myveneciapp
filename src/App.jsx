@@ -49,20 +49,18 @@ function App() {
             path="/"
             element={
               <>
-                <section className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-indigo-100 p-6">
+                <section className="bg-gradient-to-br from-indigo-50 via-white to-indigo-100 p-4 min-h-[60vh] max-w-7xl mx-auto">
                   <h1 className="text-4xl font-extrabold text-center mb-12 text-indigo-700 animate-fadeIn">
                     Bienvenido a MyVeneciApp
                   </h1>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-10">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {menuItems.map((item, index) => (
                       <a
                         key={index}
                         href={item.href}
                         className="flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition"
                       >
-                        {/* ICONO CON TAMAÑO CONTROLADO */}
                         <item.icon className="w-8 h-8 text-indigo-600 mb-4 flex-shrink-0" />
-
                         <span className="text-lg font-semibold text-gray-800">
                           {item.label}
                         </span>
@@ -70,8 +68,7 @@ function App() {
                     ))}
                   </div>
                 </section>
-
-                <main className="flex-grow">
+                <main className="mt-8 px-4 max-w-7xl mx-auto">
                   <FeatureSection />
                   <Carrusel />
                   <ContactForm />
