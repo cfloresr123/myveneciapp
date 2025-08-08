@@ -53,15 +53,19 @@ function App() {
                   <h1 className="text-4xl font-extrabold text-center mb-12 text-indigo-700 animate-fadeIn">
                     Bienvenido a MyVeneciApp
                   </h1>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-10">
                     {menuItems.map((item, index) => (
                       <a
                         key={index}
                         href={item.href}
-                        className="bg-white p-8 rounded-2xl shadow-md flex flex-col items-center hover:shadow-xl hover:scale-105 transition duration-300 transform"
+                        className="flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition"
                       >
-                        {item.icon}
-                        <h2 className="text-lg font-semibold mt-4 text-gray-800">{item.label}</h2>
+                        {/* ICONO CON TAMAÑO CONTROLADO */}
+                        <item.icon className="w-8 h-8 text-indigo-600 mb-4 flex-shrink-0" />
+
+                        <span className="text-lg font-semibold text-gray-800">
+                          {item.label}
+                        </span>
                       </a>
                     ))}
                   </div>
