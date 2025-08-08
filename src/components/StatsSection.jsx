@@ -4,7 +4,7 @@ import {
   ImFileText2,
   ImUserTie,
   ImHome3
-} from 'react-icons/hi2';
+} from 'react-icons/im';
 
 const StatsSection = () => {
   const stats = [
