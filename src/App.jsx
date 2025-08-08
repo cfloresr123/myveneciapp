@@ -16,6 +16,7 @@ import FeatureSection from './components/FeatureSection';
 import Carrusel from './components/Carrusel';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
+import StatsSection from './components/StatsSection';
 
 // Pages
 import PropietariosPage from './pages/PropietariosPage';
@@ -70,6 +71,7 @@ function App() {
                 </section>
                 <main className="mt-8 px-4 max-w-7xl mx-auto">
                   <FeatureSection />
+                  <StatsSection />
                   <Carrusel />
                   <ContactForm />
                 </main>
