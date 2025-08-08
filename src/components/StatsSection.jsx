@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  ImBuilding,
-  ImFileText2,
-  ImUserTie,
-  ImHome3
-} from 'react-icons/im';
+import { HiBuilding, HiDocumentText, HiUsers, HiOfficeBuilding } from "react-icons/hi2";
 
 const StatsSection = () => {
   const stats = [
