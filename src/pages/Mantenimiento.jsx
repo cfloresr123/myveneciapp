@@ -2,7 +2,7 @@ import React from 'react'
 import { FaClipboardList, FaBell, FaHistory, FaBuilding } from "react-icons/fa";
 
 // Importa la imagen desde la carpeta public o src/assets
-import edificioImg from "../assets/edificio.png"; // Cambia la ruta según tu proyecto
+import edificioImg from "../assets/edificio2.png"; // Cambia la ruta según tu proyecto
 
 const Mantenimiento = () => {
   return (
