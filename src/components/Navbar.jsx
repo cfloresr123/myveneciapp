@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const links = [
     { label: 'Inicio', href: '/' },
-    { label: 'Propietarios e Inquilinos', href: '/Propietarios' },
+    { label: 'Quienes Somos', href: '/Quienessomos' },
     { label: 'Reservas ', href: '/Reservas' },
     { label: 'Mantenimiento', href: '/Mantenimiento' },
     { label: 'Visitas', href: '/Visitas' },
