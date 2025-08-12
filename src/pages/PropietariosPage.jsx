@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IconCheck, IconCalendar, IconUsers, IconBell, IconFileText, IconShare2 } from 'lucide-react';
+import { Check, Calendar, Users, Bell, FileText, Share2 } from 'lucide-react';
 
 const PropietariosPage = () => {
   const [status, setStatus] = useState('');
