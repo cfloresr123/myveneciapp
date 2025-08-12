@@ -24,7 +24,6 @@ const Footer = () => {
           <h5 className="text-xl font-bold mb-4">Contáctanos</h5>
           <ul className="space-y-2 text-sm text-gray-300">
             <li>Lima - Perú</li>
-            <li>Teléfono: (1) 223 3982</li>
             <li>Móvil: +51 946 589 808</li>
             <li>Email: <a href="mailto:myveneciapp@gmail.com" className="underline">myveneciapp@gmail.com</a></li>
             <li>MyVeneciApp - 2025</li>
