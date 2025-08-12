@@ -84,7 +84,7 @@ const Quienessomos = () => {
           </p>
           <div className="mt-6 flex flex-col sm:flex-row justify-center gap-3">
             <a
-              href="#contacto"
+              href="/Contacto"
               className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-indigo-600 text-white font-medium shadow hover:bg-indigo-700"
             >
               Solicitar información
