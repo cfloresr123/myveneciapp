@@ -27,10 +27,11 @@ import Mantenimiento from './pages/Mantenimiento';
 import Visitas from './pages/Visitas';
 import Contacto from './pages/Contacto';
 import NotFound from './pages/NotFound';
+import Quienessomos from './pages/Quienessomos';
 
 function App() {
   const menuItems = [
-  { label: "Propietarios e Inquilinos", icon: HomeIcon, href: "/propietarios" },
+  { label: "Quienes Somos", icon: HomeIcon, href: "/Quienessomos" },
   { label: "Reservas", icon: CalendarDaysIcon, href: "/reservas" },
   { label: "Mantenimiento", icon: WrenchScrewdriverIcon, href: "/mantenimiento" },
   { label: "Visitas", icon: UsersIcon, href: "/visitas" },
