@@ -74,7 +74,7 @@ function App() {
                   <Carrusel />
                   <ContactForm />
                 </main>                
-                <WhatsAppFloatingButton />
+                {/*<WhatsAppFloatingButton />*/}
               </>
             }
           />
@@ -91,6 +91,8 @@ function App() {
           <Route path="/Quienessomos" element={<Quienessomos />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        {/* Botón flotante global */}
+        <WhatsAppFloatingButton />
         <Footer />
       </div>
     </Router>
