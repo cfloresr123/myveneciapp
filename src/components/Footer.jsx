@@ -10,7 +10,7 @@ const Footer = () => {
           <h5 className="text-xl font-bold mb-4">Menú</h5>
           <ul className="space-y-2 text-sm text-gray-300">
             <li><a href="/" className="hover:text-yellow-400">Inicio</a></li>
-            <li><a href="/Propietarios" className="hover:text-yellow-400">Propietarios e Inquilinos</a></li>
+            <li><a href="/Quienessomos" className="hover:text-yellow-400">Quiénes somos</a></li>
             <li><a href="/Reservas" target="_blank" className="hover:text-yellow-400">Reservas</a></li>
             <li><a href="/Mantenimiento" className="hover:text-yellow-400">Mantenimiento</a></li>
             <li><a href="/Visitas" className="hover:text-yellow-400">Visitas</a></li>

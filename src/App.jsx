@@ -31,7 +31,7 @@ import Quienessomos from './pages/Quienessomos';
 
 function App() {
   const menuItems = [
-  { label: "Quienes Somos", icon: HomeIcon, href: "/Quienessomos" },
+  { label: "Quiénes Somos", icon: HomeIcon, href: "/Quienessomos" },
   { label: "Reservas", icon: CalendarDaysIcon, href: "/reservas" },
   { label: "Mantenimiento", icon: WrenchScrewdriverIcon, href: "/mantenimiento" },
   { label: "Visitas", icon: UsersIcon, href: "/visitas" },
