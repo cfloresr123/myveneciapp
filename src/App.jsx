@@ -88,6 +88,7 @@ function App() {
           <Route path="/mantenimiento" element={<Mantenimiento />} />
           <Route path="/visitas" element={<Visitas />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/Quienessomos" element={<Quienessomos />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
