@@ -26,7 +26,7 @@ const Reservas = () => {
 
         {/* Botón de acción */}
         <a
-          href="#contacto"
+          href="/Contacto"
           className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition"
         >
           Reserva ahora
