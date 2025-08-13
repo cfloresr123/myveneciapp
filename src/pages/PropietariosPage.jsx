@@ -4,9 +4,9 @@ import { Check, Calendar, Users, Bell, FileText, Share2 } from 'lucide-react';
 
 
 const PropietariosPage = () => {
+  const navigate = useNavigate();
   const [status, setStatus] = useState('');
   // Dentro de tu componente
-  const navigate = useNavigate();
 
   return (
     <main className="min-h-screen bg-gray-50 text-slate-900 p-6 md:p-12">
