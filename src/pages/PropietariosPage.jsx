@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Check, Calendar, Users, Bell, FileText, Share2 } from 'lucide-react';
-// Dentro de tu componente
-const navigate = useNavigate();
+
 
 const PropietariosPage = () => {
   const [status, setStatus] = useState('');
+  // Dentro de tu componente
+  const navigate = useNavigate();
 
   return (
     <main className="min-h-screen bg-gray-50 text-slate-900 p-6 md:p-12">
