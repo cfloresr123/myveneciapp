@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import { Check, Calendar, Users, Bell, FileText, Share2 } from 'lucide-react';
+// Dentro de tu componente
+const navigate = useNavigate();
 
 const PropietariosPage = () => {
   const [status, setStatus] = useState('');
@@ -24,9 +27,12 @@ const PropietariosPage = () => {
                 >
                   Solicitar demo
                 </a>
-                <a href="#caracteristicas" className="inline-flex items-center gap-2 px-5 py-3 rounded-lg border border-slate-200">
-                  Ver características
-                </a>
+                <button
+                  onClick={() => navigate("/manual")}
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-lg border border-slate-200"
+                >
+                  Ver Manual
+                </button>
               </div>
             </div>
 
