@@ -10,6 +10,7 @@ import {
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import WhatsAppFloatingButton from './components/WhatsAppFloatingButton';
+import ManualViewer from "./components/ManualViewer";
 
 // Landing components
 import FeatureSection from './components/FeatureSection';
@@ -81,6 +82,7 @@ function App() {
 
           {/* Otras páginas */}
           <Route path="/propietariospage" element={<PropietariosPage />} />
+          <Route path="/manual" element={<ManualViewer />} />
           <Route path="/juntapage" element={<JuntaPage />} />
           <Route path="/conserjepage" element={<ConserjePage />} />
           <Route path="/propietarios" element={<Propietarios />} />
