@@ -28,7 +28,7 @@ import Mantenimiento from './pages/Mantenimiento';
 import Visitas from './pages/Visitas';
 import Contacto from './pages/Contacto';
 import Privacy from './pages/Privacy';
-import eliminarcuenta from './pages/eliminarcuenta';
+import EliminarCuenta from './pages/EliminarCuenta';
 import NotFound from './pages/NotFound';
 import Quienessomos from './pages/Quienessomos';
 
@@ -39,6 +39,7 @@ function App() {
   { label: "Mantenimiento", icon: WrenchScrewdriverIcon, href: "/mantenimiento" },
   { label: "Visitas", icon: UsersIcon, href: "/visitas" },
   { label: "Contacto", icon: PhoneIcon, href: "/contacto" },
+
 ];
 
   return (
@@ -92,9 +93,9 @@ function App() {
           <Route path="/mantenimiento" element={<Mantenimiento />} />
           <Route path="/visitas" element={<Visitas />} />
           <Route path="/contacto" element={<Contacto />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/eliminarcuenta" element={<eliminarcuenta />} />
+          <Route path="/privacy" element={<Privacy />} />          
           <Route path="/Quienessomos" element={<Quienessomos />} />
+          <Route path="/EliminarCuenta" element={<EliminarCuenta />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         {/* Botón flotante global */}

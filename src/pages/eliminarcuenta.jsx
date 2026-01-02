@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Mail, Send } from 'lucide-react';
 
-const eliminarcuenta = () => {
+const EliminarCuenta = () => {
   const [status, setStatus] = useState('');
   
     return (
@@ -92,4 +92,4 @@ const eliminarcuenta = () => {
     );
 }
 
-export default eliminarcuenta
+export default EliminarCuenta
