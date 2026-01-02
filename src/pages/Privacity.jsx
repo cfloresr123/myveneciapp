@@ -1,95 +1,69 @@
-import React, { useState } from 'react'
-import { Mail, Send } from 'lucide-react';
+import React from "react";
 
-const Contacto = () => {
-  const [status, setStatus] = useState('');
-  
-    return (
-      <section className="w-full px-4 py-8 bg-gray-100">
-        <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-md">
-          <div className="flex items-center mb-6">
-            <Mail className="text-blue-600 w-6 h-6 mr-2" />
-            <h2 className="text-2xl font-semibold text-blue-700">Contáctanos</h2>
-          </div>
-  
-          <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            className="space-y-6"
-            onSubmit={(e) => {
-              e.preventDefault();
-              const form = e.target;
-              const data = new FormData(form);
-  
-              fetch("/", {
-                method: "POST",
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams(data).toString(),
-              })
-                .then(() => {
-                  setStatus("✅ Tu mensaje fue enviado correctamente.");
-                  form.reset();
-                })
-                .catch((error) => {
-                  console.error("Error al enviar:", error);
-                  setStatus("❌ Ocurrió un error. Intenta nuevamente.");
-                });
-            }}
-          >
-            {/* Hidden input for Netlify */}
-            <input type="hidden" name="form-name" value="contact" />
-  
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
-              <input
-                type="text"
-                name="name"
-                required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                placeholder="Tu nombre completo"
-              />
-            </div>
-  
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Correo electrónico</label>
-              <input
-                type="email"
-                name="email"
-                required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                placeholder="ejemplo@correo.com"
-              />
-            </div>
-  
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
-              <textarea
-                name="message"
-                rows="4"
-                required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                placeholder="Escribe tu mensaje aquí..."
-              ></textarea>
-            </div>
-  
-            <div className="flex items-center justify-between">
-              <button
-                type="submit"
-                className="flex items-center gap-2 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition"
-              >
-                <Send className="w-4 h-4" />
-                Enviar
-              </button>
-  
-              {status && (
-                <p className="text-sm text-green-600 font-medium">{status}</p>
-              )}
-            </div>
-          </form>
-        </div>
-      </section>
-    );
-}
+const Privacity = () => {
+  return (
+    <div style={{ maxWidth: "800px", margin: "2rem auto", padding: "1rem", lineHeight: "1.6" }}>
+      <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>
+        Política de Privacidad – MyVeneciApp
+      </h1>
+      <p style={{ fontStyle: "italic", marginBottom: "2rem" }}>
+        Fecha de entrada en vigor: 02 de enero de 2026
+      </p>
 
-export default Contacto
+      <p>
+        MyVeneciApp (“nosotros”, “nuestro” o “la App”) se compromete a proteger la privacidad
+        de los usuarios (“usted”, “su”). Esta Política de Privacidad explica cómo recopilamos,
+        usamos y protegemos su información al usar nuestra aplicación móvil.
+      </p>
+
+      <h2>1. Información que recopilamos</h2>
+      <p>Al usar MyVeneciApp, podemos recopilar información que usted nos proporciona directamente o automáticamente:</p>
+      <ul>
+        <li><strong>Información personal:</strong> nombre, correo electrónico, número de departamento, foto de perfil.</li>
+        <li><strong>Información de uso:</strong> fechas de reserva de recursos, historial de mantenimientos, visitas registradas.</li>
+        <li><strong>Información técnica:</strong> dispositivo, sistema operativo, datos de conexión.</li>
+      </ul>
+
+      <h2>2. Cómo usamos su información</h2>
+      <ul>
+        <li>Permitir la correcta funcionalidad de la app (registro de reservas, mantenimientos, visitas).</li>
+        <li>Enviar notificaciones sobre su unidad o recursos reservados.</li>
+        <li>Mejorar la app y personalizar su experiencia.</li>
+        <li>Cumplir obligaciones legales y administrativas relacionadas con la gestión del edificio.</li>
+      </ul>
+
+      <h2>3. Compartir información</h2>
+      <p>No vendemos, alquilamos ni compartimos su información personal con terceros para fines comerciales. Solo compartimos información con:</p>
+      <ul>
+        <li>Proveedores de servicios que nos ayudan a operar la app.</li>
+        <li>Autoridades legales si es requerido por ley.</li>
+      </ul>
+
+      <h2>4. Seguridad de la información</h2>
+      <p>Implementamos medidas de seguridad razonables para proteger su información personal contra acceso no autorizado, modificación o eliminación.</p>
+
+      <h2>5. Derechos del usuario</h2>
+      <p>Usted puede:</p>
+      <ul>
+        <li>Solicitar acceso, corrección o eliminación de sus datos.</li>
+        <li>Retirar su consentimiento para el uso de datos en cualquier momento.</li>
+        <li>Contactarnos para ejercer estos derechos a través de <a href="mailto:contacto@myveneciapp.com">contacto@myveneciapp.com</a>.</li>
+      </ul>
+
+      <h2>6. Cambios a esta política</h2>
+      <p>Podemos actualizar esta Política de Privacidad ocasionalmente. La fecha de entrada en vigor se actualizará al inicio de este documento.</p>
+
+      <h2>7. Contacto</h2>
+      <p>
+        Si tiene preguntas sobre esta política, puede contactarnos en:
+      </p>
+      <ul>
+        <li>📧 Email: <a href="mailto:myvenecia@gmail.com">myvenecia@gmail.com</a></li>
+        <li>🌐 Web: <a href="https://www.myveneciapp.com" target="_blank">www.myveneciapp.com</a></li>
+      </ul>
+    </div>
+  );
+};
+
+export default Privacity;
+
