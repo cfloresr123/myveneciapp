@@ -92,4 +92,4 @@ const Contacto = () => {
     );
 }
 
-export default EliminarCuenta
+export default EliminarCta
