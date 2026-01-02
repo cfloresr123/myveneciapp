@@ -13,9 +13,9 @@ const Footer = () => {
             <li><a href="/Quienessomos" className="hover:text-yellow-400">Quiénes somos</a></li>
             <li><a href="/Reservas" target="_blank" className="hover:text-yellow-400">Reservas</a></li>
             <li><a href="/Mantenimiento" className="hover:text-yellow-400">Mantenimiento</a></li>
-            <li><a href="/Visitas" className="hover:text-yellow-400">Visitas</a></li>
+            <li><a href="/Visitas" className="hover:text-yellow-400">Visitas</a></li>h
             <li><a href="/Contacto" className="hover:text-yellow-400">Contáctanos</a></li>
-            <li><a href="/" className="hover:text-yellow-400">Libro de Reclamaciones</a></li>
+            <li><a href="/Privacity" className="hover:text-yellow-400">Privacidad</a></li>
           </ul>
         </div>
 
