@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Mail, Send } from 'lucide-react';
 
-const Contacto = () => {
+const EliminarCta = () => {
   const [status, setStatus] = useState('');
   
     return (
