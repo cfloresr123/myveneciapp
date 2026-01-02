@@ -47,7 +47,7 @@ const Privacy = () => {
       <ul>
         <li>Solicitar acceso, corrección o eliminación de sus datos.</li>
         <li>Retirar su consentimiento para el uso de datos en cualquier momento.</li>
-        <li>Contactarnos para ejercer estos derechos a través de <a href="mailto:contacto@myveneciapp.com">contacto@myveneciapp.com</a>.</li>
+        <li>Contactarnos para ejercer estos derechos a través de <a href="mailto:myveneciapp@gmail.com">myveneciapp@gmail.com</a>.</li>
       </ul>
 
       <h2>6. Cambios a esta política</h2>
@@ -58,7 +58,7 @@ const Privacy = () => {
         Si tiene preguntas sobre esta política, puede contactarnos en:
       </p>
       <ul>
-        <li>📧 Email: <a href="mailto:myveneciapp@gmail.com">myvenecia@gmail.com</a></li>
+        <li>📧 Email: <a href="mailto:myveneciapp@gmail.com">myveneciapp@gmail.com</a></li>
         <li>🌐 Web: <a href="https://www.myveneciapp.com" target="_blank">www.myveneciapp.com</a></li>
       </ul>
     </div>
