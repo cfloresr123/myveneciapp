@@ -28,7 +28,7 @@ import Mantenimiento from './pages/Mantenimiento';
 import Visitas from './pages/Visitas';
 import Contacto from './pages/Contacto';
 import Privacy from './pages/Privacy';
-import EliminarCuenta from './pages/Eliminarcuenta';
+import EliminarCuenta from './pages/EliminarCuenta';
 import NotFound from './pages/NotFound';
 import Quienessomos from './pages/Quienessomos';
 
