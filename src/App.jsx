@@ -27,6 +27,7 @@ import Reservas from './pages/Reservas';
 import Mantenimiento from './pages/Mantenimiento';
 import Visitas from './pages/Visitas';
 import Contacto from './pages/Contacto';
+import Privacy from './pages/Privacy';
 import NotFound from './pages/NotFound';
 import Quienessomos from './pages/Quienessomos';
 
@@ -90,6 +91,7 @@ function App() {
           <Route path="/mantenimiento" element={<Mantenimiento />} />
           <Route path="/visitas" element={<Visitas />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="/Quienessomos" element={<Quienessomos />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
