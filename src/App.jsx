@@ -30,7 +30,7 @@ import Contacto from './pages/Contacto';
 import Privacy from './pages/Privacy';
 import NotFound from './pages/NotFound';
 import Quienessomos from './pages/Quienessomos';
-import EliminarCuentas from './pages/EliminarCuentas';
+
 
 function App() {
   const menuItems = [
@@ -95,7 +95,6 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/privacy" element={<Privacy />} />          
           <Route path="/Quienessomos" element={<Quienessomos />} />
-          <Route path="/EliminarCuentas" element={<EliminarCuentas />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         {/* Botón flotante global */}
